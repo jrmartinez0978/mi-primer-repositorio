@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Stations Directory</title>
+    <!-- Link to public_style.css will be added later -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/public_style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Discover Radio Stations</h1>
+        <!-- Optional: Navigation links can go here -->
+    </header>
+
+    <main>
+        <section id="radioDirectory">
+            <h2>All Stations</h2>
+            <div id="radioCardGrid" class="card-grid">
+                <!-- Radio station cards will be populated here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Radio Platform. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to public_directory.js will be added later -->
+    <script src="{{ url_for('static', filename='js/public_directory.js') }}"></script>
+</body>
+</html>

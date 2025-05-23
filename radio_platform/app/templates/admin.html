@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Station Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+</head>
+<body>
+    <h1>Radio Station Control Panel</h1>
+
+    <h2>Add/Edit Station</h2>
+    <form id="stationForm">
+        <input type="hidden" id="stationId"> <!-- For storing ID when editing -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" required>
+        </div>
+        <div>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre">
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div>
+            <label for="logo_url">Logo URL:</label>
+            <input type="url" id="logo_url" name="logo_url">
+        </div>
+        <button type="submit">Save Station</button>
+    </form>
+
+    <h2>Existing Stations</h2>
+    <div id="stationList">
+        <!-- Station list will be populated here by JavaScript -->
+    </div>
+
+    <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+</body>
+</html>
