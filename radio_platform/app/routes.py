@@ -1,4 +1,4 @@
-from flask import request, jsonify
+from flask import request, jsonify, render_template
 from app import app, db
 from app.models import RadioStation
 
@@ -73,3 +73,8 @@ def delete_station(id):
     db.session.delete(station)
     db.session.commit()
     return jsonify({'message': 'Station deleted successfully'}), 200
+
+# Admin panel route
+@app.route('/admin')
+def admin_panel():
+    return render_template('admin.html')

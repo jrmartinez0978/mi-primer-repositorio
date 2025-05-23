@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#stationForm {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#stationForm div {
+    margin-bottom: 10px;
+}
+
+#stationForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#stationForm input[type="text"],
+#stationForm input[type="url"],
+#stationForm textarea {
+    width: 95%; /* Adjusted for padding */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#stationForm button {
+    background: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#stationForm button:hover {
+    background: #4cae4c;
+}
+
+#stationList > div { /* Target direct div children of stationList */
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    display: flex; /* For aligning items if needed */
+    justify-content: space-between; /* Example alignment */
+    align-items: center; /* Example alignment */
+}
+
+#stationList button { /* Generic styling for buttons within the list items */
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Specific classes for buttons if you add them via JS */
+button.edit-btn {
+   background-color: #f0ad4e;
+   color: white;
+   border-color: #eea236;
+}
+ button.edit-btn:hover {
+   background-color: #ec971f;
+   border-color: #d58512;
+}
+
+button.delete-btn {
+   background-color: #d9534f;
+   color: white;
+   border-color: #d43f3a;
+}
+ button.delete-btn:hover {
+   background-color: #c9302c;
+   border-color: #ac2925;
+}
