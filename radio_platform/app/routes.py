@@ -74,6 +74,11 @@ def delete_station(id):
     db.session.commit()
     return jsonify({'message': 'Station deleted successfully'}), 200
 
+# Public directory route
+@app.route('/')
+def public_directory_index():
+    return render_template('public_index.html')
+
 # Admin panel route
 @app.route('/admin')
 def admin_panel():
